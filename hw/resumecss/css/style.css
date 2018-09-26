@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+
+body{
+
+  background-color: white;
+  font-family: 'Noto Serif JP', sans-serif;}
+
+  a{text-decoration: none;
+  color: blue;}
+
+a:hover{
+  color: purple;
+  text-decoration: underline;}
+
+h1{
+  font-family: cursive;}
+
+  address{
+    font-family: Georgia, serif;
+  }
+
+  #name{
+    color: #9900cc;
+  }
+
+#table{
+  text-align: center;
+}
+
+#address{
+  background-color: #e6f9ff
+}
+
+#address2{
+  color: blue
+}
+
+#myschools{
+  font-size: 16px
+}
+
+
+.list{
+  color: #cc00ff;
+}
+
+.headers{
+  font-family: fantasy;
+}
