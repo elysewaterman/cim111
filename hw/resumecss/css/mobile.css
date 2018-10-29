@@ -1,0 +1,11 @@
+@@import "desktop.css";
+
+body{
+  background-color: orange
+}
+
+.col{
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,79 @@
+header, main{
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#main1{
+  width: 1250px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#heading{
+  width: 980px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#aboutColorado{
+  width: 980px;
+  height: auto;
+  font-size: 20px;
+  border-width: 1px;
+  border-style: ridge;
+  border-color: blue;
+}
+
+#grid1{
+  display: grid;
+  /* grid-template-areas: "col1" "col2" "col3" "col4"; */
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 40px;
+}
+
+#grid2{
+  display: grid;
+  /* grid-template-areas: "col1" "col2" "col3" "col4"; */
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  grid-gap: 40px;
+}
+
+
+#col1{
+  width:600px;
+  height: 300px;
+  background-image: url('../images/colorado.jpg');
+}
+
+#col2{
+  width: 600px;
+  height: 300px;
+  background-image: url('../images/EstesPark.jpg');
+}
+
+#col3{
+  width: 600px;
+  height: 300px;
+  background-image: url('../images/baseball.jpg');
+}
+
+#col4{
+  width: 600px;
+  height: 300px;
+  background-image: url('../images/view.jpg');
+
+}
+
+footer {
+    width: 600px;
+    margin: 0 auto;
+  background-color: green;
+  padding-top: 20px;
+  text-align: center;
+
+}
