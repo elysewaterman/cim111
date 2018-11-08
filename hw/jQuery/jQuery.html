@@ -6,9 +6,12 @@
 
   <title>How to Make Chocolate Covered Strawberries</title>
 
-  <meta name="author" content="Elyse Waterman">
-  <meta name="keywords" content="HTML, tags">
-  <meta name="description" content="Resume">
+  <style type="text/css">
+
+body {
+  font-family: arial;}
+
+  </style>
 
 </head>
 
@@ -22,24 +25,27 @@
 
 </header>
 
-<h2>Dark Chocolate Covered Strawberries</h2>
+<h2 id="info">Dark Chocolate Covered Strawberries</h2>
 
 
 <section>
 
-<i><h3>About the Recipe</h3></i>
+<i><h3 id="recipe">About the Recipe</h3></i>
 
+<div id="recipeInfo">
 With holiday season quickly approaching, dark chocolate covered strawberries are the perfect dessert for friends and family alike.
 If you're trying to stay healthy throughout Thanksgiving, Christmas and into the new year - make these amazing treats! After all,
 Dark chocolate is loaded with nutrients that can positively affect your health. Made from the seed of the cocoa tree, it is one
 of the best sources of antioxidants on the planet. Studies show that dark chocolate can improve your health and lower the risk
 of heart disease. Chocolate-covered strawberries are always a crowd pleaser and are loaded with antioxidants and vitamins.
 However, like everything, dark chocolate is best consumed in moderation.
+</div>
 
 </section>
 
-<i><h3>Nutritional Information</h3></i>
+<i><h3 id="nutrition">Nutritional Information</h3></i>
 
+<div id="nutritionInfo">
 A 100-gram bar of dark chocolate with 70 to 85 percent cocoa contains:
 
   <ul>
@@ -66,6 +72,8 @@ A 100-gram bar of dark chocolate with 70 to 85 percent cocoa contains:
     <li>Calcium 15mg</li>
   </ul>
 
+  </div>
+
   <i><h3>What You'll Need</h3></i>
 
   <table>
@@ -89,22 +97,81 @@ A 100-gram bar of dark chocolate with 70 to 85 percent cocoa contains:
 <li>1/2 cup lightly salted roasted pistachios, finely chopped (optional)</li>
 </ol>
 
-<i><h3>How To Make Them</h3></i>
+<h2>How To Make Them</h2>
 <ol>
-<li>Line a baking sheet with foil. Place chocolate in a heatproof bowl set over a pan of simmering water. (Do not let water boil or bowl touch water.) Cook, stirring occasionally, until chocolate has melted. Carefully remove bowl and let chocolate cool for 5 minutes. Place pistachios in a small bowl.</li>
-<li>One at a time, hold a strawberry by stem and dip into chocolate, coating about two-thirds; allow excess to drip off. Immediately dip into pistachios. Set strawberries in 1 layer on prepared baking sheet. Refrigerate until chocolate is firm, about 10 minutes.</li>
+<li> Line a baking sheet with foil. Place chocolate in a heatproof bowl set over a pan of simmering water. (Do not let water boil or bowl touch water.)</li>
+  <li>Cook, stirring occasionally, until chocolate has melted. <img src="images/meltedchoc.jpg" width="200px"/></li>
+    <li>Carefully remove bowl and let chocolate cool for 5 minutes.</li>
+      <li>Wash your strawberries<img src="images/washed.jpg" width="200px"/</li>
+      <li>Place your favorite toppings like sprinkles or pistachios in a small bowl.</li>
+<li>One at a time, hold a strawberry by stem and dip into chocolate, coating about two-thirds; allow excess to drip off.Immediately dip into your small bowl of toppings<img src="images/dipping.jpg" width="200px"/>
+<img src="images/topping.jpg" width="200px"</li>
+<li>Set strawberries in 1 layer on prepared baking sheet. Refrigerate until chocolate is firm, about 10 minutes.<img src="images/finaltopping.jpg" width="200px"/></li>
 <li>Store in the refrigerator for up to 2 days and enjoy!</li>
 </ol>
-
 
 <footer>
 
   <P>
     Recipe from <a href="https://www.myrecipes.com/recipe/chocolate-covered-strawberries">My Recipes.</a>
+    Pictures from <a href="http://glamorousbite.com/recipes/chocolate-covered-strawberries-with-rose-petals/">Glamorous Bite.</a>
+    Strawberry picture from <a href="https://foodal.com/knowledge/how-to/store-berries/">Foodal.</a>
   </p>
 
 
 </footer>
+
+<script src="javascript/jquery-3.3.1.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+  $(".box").hide();
+         $("body").css("background-color", "pink");
+         $("h1").css("color", "midnightblue");
+         $("#changeText").css("font-size", "40px");
+
+
+         $("#changeText").click(function(){
+           $("body").css("background-color", "yellow");
+         });//end of change text click
+
+
+
+           $("#info").mouseenter(function(){
+             $("#recepticle").html("<em>This information is important</em>");
+             $("#info").css("background-color", "yellow");
+           });
+
+
+           $("#info").mouseleave(function(){
+             $("#recepticle").html("");
+             $("#info").css("background-color", "transparent");
+           });
+
+
+// recipe section
+           $("#recipeInfo").hide();
+
+            $("#recipe").click(function(){
+              $("#recipeInfo").toggle();
+
+            });
+// end of recipe section
+
+// nutrional info section
+
+$("#nutritionInfo").hide();
+
+ $("#nutrition").click(function(){
+   $("#nutritionInfo").toggle();
+
+ });
+
+
+       });
+
+</script>
 
 
 </body>
