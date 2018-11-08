@@ -100,16 +100,18 @@ A 100-gram bar of dark chocolate with 70 to 85 percent cocoa contains:
 <h2>How To Make Them</h2>
 <ol>
 <li> Line a baking sheet with foil. Place chocolate in a heatproof bowl set over a pan of simmering water. (Do not let water boil or bowl touch water.)</li>
-  <li>Cook, stirring occasionally, until chocolate has melted. <img src="images/meltedchoc.jpg" width="200px"/></li>
+  <li>Cook, stirring occasionally, until chocolate has melted. </br><img src="images/meltedchoc.jpg" width="200px"/></li>
     <li>Carefully remove bowl and let chocolate cool for 5 minutes.</li>
-      <li>Wash your strawberries<img src="images/washed.jpg" width="200px"/</li>
+      <li>Wash your strawberries </br><img src="images/washed.jpg" width="200px"/</li>
       <li>Place your favorite toppings like sprinkles or pistachios in a small bowl.</li>
-<li>One at a time, hold a strawberry by stem and dip into chocolate, coating about two-thirds; allow excess to drip off.Immediately dip into your small bowl of toppings<img src="images/dipping.jpg" width="200px"/>
-<img src="images/topping.jpg" width="200px"</li>
-<li>Set strawberries in 1 layer on prepared baking sheet. Refrigerate until chocolate is firm, about 10 minutes.<img src="images/finaltopping.jpg" width="200px"/></li>
+<li>One at a time, hold a strawberry by stem and dip into chocolate, coating about two-thirds; allow excess to drip off.Immediately dip into your small bowl of toppings </br><img src="images/dipping.jpg" width="200px"/>
+</br><img src="images/topping.jpg" width="200px"</li>
+<li>Set strawberries in 1 layer on prepared baking sheet. Refrigerate until chocolate is firm, about 10 minutes.</br><img src="images/finaltopping.jpg" width="200px"/></li>
 <li>Store in the refrigerator for up to 2 days and enjoy!</li>
-</ol>
 
+<li id="hoverhere">Hover here!</li>
+</ol>
+<div id="recpt"></div>
 <footer>
 
   <P>
@@ -139,14 +141,21 @@ $(document).ready(function(){
 
 
            $("#info").mouseenter(function(){
-             $("#recepticle").html("<em>This information is important</em>");
              $("#info").css("background-color", "yellow");
            });
 
 
            $("#info").mouseleave(function(){
-             $("#recepticle").html("");
              $("#info").css("background-color", "transparent");
+           });
+
+           $("#hoverhere").mouseenter(function(){
+             $("#recpt").html("Enjoy!");
+           });
+
+
+           $("#hoverhere").mouseleave(function(){
+             $("#recpt").html("");
            });
 
 
