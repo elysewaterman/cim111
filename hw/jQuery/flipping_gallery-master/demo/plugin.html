@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Australia</title>
+	<link rel="image_src" href="/images/flipping_gallery_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/flipping_gallery_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
+	<meta name="author" content="Pete R.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='flipping_gallery.css' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.flipping_gallery.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: url(img/background.png);
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #efbef2;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+    }
+    h2 {
+      letter-spacing: 0px;
+      color: #efbef2;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+		h3 {
+			letter-spacing: 0px;
+      color: #efbef2;
+      font-weight: 50;
+      margin-top: 5px;
+      margin-bottom: 5px;
+		}
+
+    .pointer {
+      color: #efbef2;
+      font-family: 'Pacifico';
+      font-size: 24px;
+			letter-spacing: 10px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      right: -40px;
+    }
+    .pointer2 {
+      color: #efbef2;
+      font-family: 'Pacifico';
+      font-size: 24px;
+			letter-spacing: 10px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      left: -40px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+    .main h1 {
+      padding:20px 50px 10px;
+      float: left;
+      width: 100%;
+      font-size: 60px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+      padding-top: 25px;
+      font-family: 'Noto Serif';
+      font-style: italic;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    }
+
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #0D2633;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #A2261E;
+    }
+    .btn {
+      width: 200px;
+      color: white;
+      border: none;
+      margin-left: 10px;
+      background: #efbef2;
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #00CDFF;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      font-family: "noto serif";
+      font-style: italic;
+      text-align: center;
+      color: #efbef2;
+      color: #efbef2;
+      padding: 10px;
+      margin: 0 0 40px 0;
+      float: left;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+    .credit a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #efbef2;
+    }
+
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(0,0,0,0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #efbef2;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+    .back:hover {
+      background: rgba(0,0,0,0.5);
+    }
+
+
+    .page-container {
+      max-width: 700px;
+      margin: auto;
+      position: relative;
+    }
+
+    .page-container p{
+      font-size: 21px;
+      font-weight: 100;
+      line-height: 180%;
+    }
+
+    .page-container h3 {
+      font-family: "noto serif";
+      font-size: 23px;
+    }
+
+    .gallery {
+      width: 500px;
+      height: 333px;
+      margin: 150px auto 100px;
+    }
+
+    .navigation {
+      margin-bottom: 150px;
+    }
+
+    .fg-card, .fg-card > img {
+      border-radius: 3px;
+    }
+
+    .fg-caption {
+      color: #efbef2;
+      font-style: italic;
+      font-family:noto serif;
+      font-size: 24px;
+    }
+
+	</style>
+	<script>
+	  $(document).ready( function() {
+	    $(".gallery").flipping_gallery({
+	      enableScroll: true,
+	      autoplay: 2000
+	    });
+
+	    $(".next").click(function() {
+	      $(".gallery").flipForward();
+	      return false;
+	    });
+	    $(".prev").click(function() {
+	      $(".gallery").flipBackward();
+	      return false;
+	    });
+	  });
+
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    <div class="header">
+        <h1>Australia</h1>
+        <h2>The Most Iconic Places to Visit Down Under</h2>
+				<br>
+        <p class="credit">Created by Elyse Waterman</a></p>
+				<br>
+				<br>
+				<br>
+      <br>
+  	  </div>
+
+      <div class="page-container">
+      <div class="pointer2">Click</div>
+      <div class="pointer">Scroll</div>
+        <div class="gallery">
+          <a href="#" data-caption="Walk along the white-sand crescent of the infamous Bondi Beach in Sydney, Australia."><img src="img/bondi.jpg"></a>
+          <a href="#" data-caption="Watch locals swim at The Bondi Icebergs Club in Bondi Beach, Sydney."><img src="img/water.jpg"></a>
+          <a href="#" data-caption="Drive along the Great Ocean Road and see the 12 Apostles in Victoria, Australia."><img src="img/rock.jpg"></a>
+          <a href="#" data-caption="Hike in the beautiful mountains in Nimbin, New South Wales in Australia."><img src="img/hike.jpg"></a>
+          <a href="#" data-caption="Go to Byron Bay in New South Whales, Australia and eat at Combi Cafe."><img src="img/combicafe.jpg"></a>
+        </div>
+
+
+        <div class="navigation">
+          <a href="#" class="btn prev">Previous</a>
+          <a href="#" class="btn next">Next</a>
+        </div>
+      </div>
+
+<h3>List of Unique Places to See</h3>
+			<ol>
+
+			<li><a href="https://us.sydney.com/things-to-do/beach-lifestyle/bondi-beach">Bondi Beach</a><br> A popular beach and the name of the surrounding suburb in Sydney, New South Wales, Australia. It is located 4 miles east of the Sydney central business district in the Eastern suburbs. Bondi, North Bondi, and Bondi Junction are neighboring suburbs. Bondi Beach is one of the most visited tourist sites in Australia, and it is worth the hype. This iconic stretch of fine sand and curling waves is one of the world’s most famous beach destinations.</li>
+			<br>
+			<li><a href="https://icebergs.com.au">Bondi Beach Icebergs</a><br> Located at the southern end of Bondi Beach, Bondi Icebergs Club is an international landmark, and no trip to Sydney is completely without a visit to our pool and clubhouse. Bondi Icebergs has been the home of winter swimming since 1929. The famous pool is open to visitors all year round. Located above the pool is a fully licensed clubhouse. It is open to both members and guests, and all visitors are welcome to enjoy sweeping views over the pool and Bondi beach as they drink or dine on the sunny balcony.</li>
+			<br>
+			<li><a href="https://www.visitgreatoceanroad.org.au">Great Ocean Road</a><br> See the towering 12 Apostles, get up close to native wildlife, and take in iconic surf breaks, pristine rainforest and misty waterfalls along the spectacular Great Ocean Road. Get outdoors on bushwalking, surfing and mountain biking expeditions or take the cultural route through galleries, museums and heritage attractions. Feast on spectacular views and local produce along the way.</li><br>
+			<li><a href="https://www.visitnimbin.com.au">Nimbin</a><br>
+				Nimbin is a village in the Northern Rivers area of the Australian state of New South Wales. Nimbin is notable for the prominence of its environmental initiatives such as permaculture, sustainability, and self-sufficiency, as well as the cannabis counterculture. Writer Austin Pick described his initial impressions of the village this way: "It is as if a smoky avenue of Amsterdam has been placed in the middle of the mountains behind frontier-style building facades. ... Nimbin is a strange place indeed."
+			</li><br>
+			<li><a href="https://www.instagram.com/wearecombi/?hl=en">Combi Cafe</a><br>
+				This hipster cafe is the epitome of chill, Australian vibes. Offering a wide variety of selections, from their famous array of raw organic superfood smoothies to their handmade crunchy granola - you’re bound to find something you love at this intimate little cafe.
+			</li>
+			</ol>
+
+</body>
+</html>
