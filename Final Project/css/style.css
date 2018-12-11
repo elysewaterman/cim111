@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background-image: url("../images/background.jpg");
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 25px;
+}
+
+/*links*/
+a,
+a:visited {
+  color:#888;
+}
+
+a:hover,
+a:active{
+  color: #cca8b4;
+}
+
+nav ul li a{
+  /* filter:grayscale(1); */
+  /* transition filter: 0.5s ease-in; */
+  text-decoration: none;
+
+}
+
+nav ul li a:hover{
+  color: pink;
+
+}
+
+/*headings*/
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 72px;
+  color: #222;
+  color: rgb(212,1160,40);
+  text-transform: lowercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h3{
+  margin-top: 0px;
+}
+
+/*structural*/
+
+address{
+  font-style: normal;
+}
+
+li{
+  list-style-type: square;
+}
+
+nav {
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(212,1160,40);
+  width: 100%
+  margin-top:5px;
+}
+
+nav ul{
+  padding-left: 0;
+  list-style: none;
+  margin: 0px;
+  background-color: black;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 100px;
+}
+
+nav a,
+nav a:visited {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  background-color: black;
+}
+
+nav a:hover{
+  color: #eee;
+  text-decoration-color: white;
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  grid-column-gap: 50px;
+  margin-top: 20px;
+}
+
+img{
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+/*ids*/
+
+#elyse{
+  color: black;
+  display: inline-block;
+}
+
+#waterman{
+  color: #a3d0d0;
+  display: inline-block;
+}
+
+#resume article{
+  margin-top: 15px;
+}
+
+#food main{
+  grid-template-columns: 1fr 300px;
+}
+
+
+#food img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 0.3s ease-in;
+}
+
+#food img:hover{
+  filter: grayscale(0);
+  transition: filter 0.3s ease-in;
+}
+
+#food .right{
+  float: right;
+}
+
+#work main{
+  grid-template-columns: 1fr 300px;
+}
+
+#index .right{
+  float: right;
+}
+
+#index main{
+  grid-template-columns: 1fr 400px;
+}
+
+#travel main{
+  grid-template-columns: 1fr 300px;
+}
+
+
+#travel img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 0.3s ease-in;
+}
+
+#travel img:hover{
+  filter: grayscale(0);
+  transition: filter 0.3s ease-in;
+}
+
+#travel .right{
+  float: right;
+}
+
+#contact{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#education{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#skills{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#experience{
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+
+.grid{
+  width: 1000px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+    <title>Elyse Waterman | Food</title>
+    <link href="css/style.css" rel="stylesheet" media="only screen and (min-width: 1000px)"/>
+    <link href="css/styleMobile.css" rel="stylesheet" media="only screen and (max-width: 1000px)"/>
+    <style>
+      .grid-item {
+        width: 200px;
+        height: 200px;
+      }
+
+      }
+    </style>
+</head>
+
+<body id="food">
+  <div id="wrapper">
+    <header>
+      <h1><div id="elyse">Elyse</div><div id="waterman"><span>Waterman</span></div></h1>
+    </header>
+
+    <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="work.html">Work</a></li>
+          </ul>
+        </nav>
+
+    <main>
+      <section>
+        <h2>Food</h2>
+        <div class="grid">
+          <div class="grid-item"><img src="images/seafood.jpg" alt="Seafood"/></div>
+          <div class="grid-item"><img src="images/bagel.jpg" alt="Bagel"/></div>
+          <div class="grid-item"><img src="images/sushi.jpg" alt="Sushi"/></div>
+          <div class="grid-item"><img src="images/bagel2.jpg" alt="Bagel"/></div>
+          <div class="grid-item"><img src="images/bowl.jpg" alt="Bowl"/></div>
+          <div class="grid-item"><img src="images/salad.jpg" alt="Salad"/></div>
+          <div class="grid-item"><img src="images/cucumber.jpg" alt="Cucumber"/></div>
+          <div class="grid-item"><img src="images/wrap.jpg" alt="Wrap"/></div>
+          <div class="grid-item"><img src="images/sushi2.jpg" alt="Sushi"/></div>
+          <div class="grid-item"><img src="images/salmon.jpg" alt="Salmon"/></div>
+          <div class="grid-item"><img src="images/pancake.jpg" alt="Pancake"/></div>
+          <div class="grid-item"><img src="images/wrap2.jpg" alt="Wrap"/></div>
+          <div class="grid-item"><img src="images/salad2.jpg" alt="Salad"/></div>
+          <div class="grid-item"><img src="images/egg.jpg" alt="Egg"/></div>
+          <div class="grid-item"><img src="images/turkey.jpg" alt="Turkey"/></div>
+
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+
+  <script>
+      $(document).ready(function(){
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
+            });
+      });
+
+  </script>
+
+
+
+</body>
+</html>

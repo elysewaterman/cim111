@@ -1,0 +1,65 @@
+@import "style.css";
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 25px;
+}
+
+main{
+  width: 100%;
+}
+
+
+nav{
+  width: 100%;
+  height: auto;
+}
+
+nav ul li{
+  width: 100%;
+  text-align: center;
+}
+
+#elyse{
+  color: black;
+  display: block;
+}
+
+#waterman{
+  color: #a3d0d0;
+  display: block;
+}
+
+#index .right{
+  float: none;
+}
+
+#index main{
+  grid-template-columns: 1fr 400px;
+}
+
+#contact{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#education{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#skills{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#experience{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.grid{
+  width: 100%;
+}
